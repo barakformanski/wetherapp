@@ -55,9 +55,10 @@ const Forecast = () => {
         // "https://@api.meteomatics.com/2021-08-16T00:00:00       ZP10D:PT12H/t_2m:C/46.75246,5.98434/json",
         // https://api.meteomatics.com     /2021-08-17T07:13:03.904Z ZP10D:PT12H/t_2m:C/israel:0.1,0.1/json
         // `https://@api.meteomatics.com/${dateStart}ZP${duration}D:PT${everyNumOfHour}H/t_2m:C/${country}:0.1,0.1/json`,
-        // `http://localhost:8080/https://@api.meteomatics.com/${dateStart}ZP${duration}D:PT${everyNumOfHour}H/t_2m:C/${coordinates}/json`,
-        `https://serene-castle-60287.herokuapp.com/https://@api.meteomatics.com/${dateStart}ZP${duration}D:PT${everyNumOfHour}H/t_2m:C/${coordinates}/json`,
         // `https://none_formanski:HwR8eabI7x5BM@api.meteomatics.com/${dateStart}ZP${duration}D:PT${everyNumOfHour}H/t_2m:C/${coordinates}/json`,
+        `https://@api.meteomatics.com/${dateStart}ZP${duration}D:PT${everyNumOfHour}H/t_2m:C/${coordinates}/json`,
+        // `http://localhost:8080/https://@api.meteomatics.com/${dateStart}ZP${duration}D:PT${everyNumOfHour}H/t_2m:C/${coordinates}/json`,
+        // `https://serene-castle-60287.herokuapp.com/https://@api.meteomatics.com/${dateStart}ZP${duration}D:PT${everyNumOfHour}H/t_2m:C/${coordinates}/json`,
 
         {
           auth: {
