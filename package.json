@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^12.8.3",
     "axios": "^0.21.1",
     "cors": "^2.8.5",
+    "cors-anywhere": "^0.4.4",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-geocode": "^0.2.3",
@@ -17,7 +18,8 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "start": "react-scripts start | node server.js",
+    "startA": "react-scripts start | node server.js",
+    "start": "concurrently \"react-scripts start\" \"cd node_modules/cors-anywhere/lib/ && npm run start\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
